@@ -5,6 +5,7 @@ Data processing should happen here.
 Edit this file to implement your module.
 """
 
+from os import getenv
 from logging import getLogger
 
 log = getLogger("module")
@@ -27,9 +28,23 @@ def module_main(received_data: any) -> [any, str]:
     log.debug("Processing ...")
 
     try:
-        # YOUR CODE HERE
+        freq_ranges_str = [freq_range.strip() for freq_range in getenv("FREQUENCY_RANGES").split(";")]
 
-        processed_data = received_data
+        freq_ranges = []
+        for freq_range_str in freq_ranges_str:
+            freq_range = [float(freq.strip()) for freq in freq_range_str.split("-")]
+            freq_ranges.append(freq_range)
+
+        processed_data = []
+        for entry in received_data:
+            in_range = False
+            for freq_range in freq_ranges:
+                if entry["frequency"] > freq_range[0] and entry["frequency"] < freq_range[1]:
+                    in_range = True
+                    break
+
+            if not in_range:
+                processed_data.append(entry)
 
         return processed_data, None
 
