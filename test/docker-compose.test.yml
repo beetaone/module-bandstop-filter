@@ -1,15 +1,14 @@
 version: "3.0"
 networks:
   default:
-    name: boilerplate_network
+    name: bandstop_filter_network
 services:
 
-  boilerplate:
-    # image: weevenetwork/boilerplate
+  bandstop_filter:
     build:
       context: ../
       dockerfile: docker/Dockerfile
-    container_name: boilerplate_test_container
+    container_name: bandstop_filter_test_container
     ports:
       - 80:80
     env_file:
