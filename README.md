@@ -1,16 +1,16 @@
-# Bandpass Filter
+# Band-stop Filter
 
 |           |                                                                                       |
 | --------- | ------------------------------------------------------------------------------------- |
-| name      | Bandpass Filter                                                                       |
+| name      | Band-stop Filter                                                                      |
 | version   | v1.0.0                                                                                |
-| DockerHub | [weevenetwork/bandpass-filter](https://hub.docker.com/r/weevenetwork/bandpass-filter) |
+| DockerHub | [weevenetwork/bandstop-filter](https://hub.docker.com/r/weevenetwork/bandstop-filter) |
 | authors   | Paul Gaiduk                                                                           |
 
 ***
 ## Table of Content
 
-- [Bandpass Filter](#bandpass-filter)
+- [Band-stop Filter](#band-stop-filter)
   - [Table of Content](#table-of-content)
   - [Description](#description)
   - [Environment Variables](#environment-variables)
@@ -23,7 +23,7 @@
 
 ## Description
 
-Module that filters abnormal frequencies.
+Module that filters out frequencies.
 
 ## Environment Variables
 

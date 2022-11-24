@@ -1,15 +1,15 @@
 version: "3.0"
 services:
-  bandpass-filter:
+  bandstop-filter:
     build:
       context: ../
       dockerfile: docker/Dockerfile
     environment:
-      MODULE_NAME: "bandpass-filter"
+      MODULE_NAME: "bandstop-filter"
       MODULE_TYPE: "Processing"
       INGRESS_HOST: "0.0.0.0"
       INGRESS_PORT: "80"
-      EGRESS_URLS: "https://testbandpass.free.beeceptor.com"
+      EGRESS_URLS: "https://testbandstop.free.beeceptor.com"
       FREQUENCY_RANGES: "30-30000; 33000-34000"
     ports:
       - 80:80
