@@ -3,7 +3,7 @@
 |           |                                                                                       |
 | --------- | ------------------------------------------------------------------------------------- |
 | name      | Band-stop Filter                                                                      |
-| version   | v1.0.0                                                                                |
+| version   | v1.0.1                                                                                |
 | DockerHub | [weevenetwork/bandstop-filter](https://hub.docker.com/r/weevenetwork/bandstop-filter) |
 | authors   | Paul Gaiduk                                                                           |
 
