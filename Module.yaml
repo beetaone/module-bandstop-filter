@@ -7,10 +7,10 @@ categories:                             # Array of category that will be used to
   - 'Filter'
 type: 'Processing'      # Module type (Input, Processing, Output) that will be used to group the module in the UI.
 image:
-  name: 'weevenetwork/bandstop-filter'     # Image name from the docker registry.
+  name: 'beetaone/bandstop-filter'     # Image name from the docker registry.
   tag: 'v1.0.1'                               # Image tag from the docker registry.
-  homepage: 'https://hub.docker.com/r/weevenetwork/bandstop-filter'      # Image homepage from the docker registry.
-repository: 'https://github.com/weevenetwork/bandstop-filter'     # Repository URL to source code.
+  homepage: 'https://hub.docker.com/r/beetaone/bandstop-filter'      # Image homepage from the docker registry.
+repository: 'https://github.com/beetaone/bandstop-filter'     # Repository URL to source code.
 envs:                                   # Array of environment variables that will be used to configure the module. Also used to show related fields on the UI.
   - name: Frequency Ranges                   # name of the field to be displayed on the UI.
     key: FREQUENCY_RANGES                # key to set in the environment variables.
@@ -33,4 +33,4 @@ tags:                                   # Array of tags.
   - 'Filtering'
   - 'data'
   - 'signal'
-icon: 'https://icons-020-demo.s3.eu-central-1.amazonaws.com/mi_bandstop_filter_process.png'    # Icon URL that will be displayed in the UI.
+icon: 'https://icons-020-demo.s3.eu-central-1.amazonaws.com/mi_bandstop_filter_process.png'    # Icon URL that will be displayed in the UI.d in the UI.

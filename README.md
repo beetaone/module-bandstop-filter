@@ -4,7 +4,7 @@
 | --------- | ------------------------------------------------------------------------------------- |
 | name      | Band-stop Filter                                                                      |
 | version   | v1.0.1                                                                                |
-| DockerHub | [weevenetwork/bandstop-filter](https://hub.docker.com/r/weevenetwork/bandstop-filter) |
+| DockerHub | [beetaone/bandstop-filter](https://hub.docker.com/r/beetaone/bandstop-filter) |
 | authors   | Paul Gaiduk                                                                           |
 
 ***
@@ -15,7 +15,7 @@
   - [Description](#description)
   - [Environment Variables](#environment-variables)
     - [Module Specific](#module-specific)
-    - [Set by the weeve Agent on the edge-node](#set-by-the-weeve-agent-on-the-edge-node)
+    - [Set by the beetaone Agent on the edge-node](#set-by-the-beetaone-agent-on-the-edge-node)
   - [Dependencies](#dependencies)
   - [Input](#input)
   - [Output](#output)
@@ -33,7 +33,7 @@ Module that filters out frequencies.
 
 ### Module Specific
 
-### Set by the weeve Agent on the edge-node
+### Set by the beetaone Agent on the edge-node
 
 | Environment Variables | type   | Description                                    |
 | --------------------- | ------ | ---------------------------------------------- |
